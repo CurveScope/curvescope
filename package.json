@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.mjs",
     "test": "node --test",
-    "build": "node build-worker.mjs"
+    "build": "node build-worker.mjs",
+    "build:miqayel": "node miqayel/build-site.mjs"
   },
   "dependencies": {
     "@meteora-ag/dynamic-bonding-curve-sdk": "1.5.13",
