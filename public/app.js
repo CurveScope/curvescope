@@ -84,9 +84,14 @@ async function inspect() {
   status.classList.remove('error');
   status.textContent = 'Reading Solana mainnet account data…';
   try {
-    const response = await fetch(`/api/inspect?address=${encodeURIComponent(input.value.trim())}`);
-    const data = await response.json();
-    if (!response.ok) throw new Error(data.error || 'Inspection failed.');
+    let data;
+    if (typeof globalThis.curvescopeInspect === 'function') {
+      data = await globalThis.curvescopeInspect(input.value.trim());
+    } else {
+      const response = await fetch(`/api/inspect?address=${encodeURIComponent(input.value.trim())}`);
+      data = await response.json();
+      if (!response.ok) throw new Error(data.error || 'Inspection failed.');
+    }
     render(data);
   } catch (error) {
     status.classList.add('error');
