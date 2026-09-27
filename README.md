@@ -32,6 +32,11 @@ Open the local URL printed by the server. The included sample is a migrated DBC 
 
 Build the edge bundle with `npm run build`. Its output is generated in `dist/` and is not committed.
 
+### Static Miqayel build
+
+Run `npm run build:miqayel` to create `miqayel/dist/curvescope.html`. Upload this single HTML file in the Miqayel Platform website editor. It bundles the app and the browser-side Meteora pool reader, so the static site does not need a Node server. The reader calls PublicNode directly from each visitor's browser; public RPC availability can cause temporary errors.
+
 ## Hackathon entry
 
 Built for the Crypto World's Fair hackathon and the Meteora DBC side track. The live demo shows the current prototype. Prize eligibility and judging are controlled by the organizers; publishing this repository does not constitute a final submission or guarantee a prize.
+
