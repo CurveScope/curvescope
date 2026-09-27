@@ -2,7 +2,7 @@
 
 **See the curve. Know the moment.** CurveScope is a read-only observatory for [Meteora Dynamic Bonding Curve](https://docs.meteora.ag/developer-guides/dbc) pools on Solana mainnet.
 
-[Open the live demo](https://curvescope-orbit-2026.navy-coin-0045.chatgpt.site/) · [View the Colosseum project](https://colosseum.com/arena/projects/curvescope)
+[Open the live demo](https://curvescope-orbit-2026.navy-coin-0045.chatgpt.site/) · [View the Colosseum project](https://colosseum.com/arena/projects/curvescope) · [View the pitch deck](CurveScope-pitch.pptx)
 
 ![CurveScope dashboard](screenshot.png)
 
