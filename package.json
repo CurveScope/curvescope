@@ -1,0 +1,21 @@
+{
+  "name": "curvescope",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test",
+    "build": "node build-worker.mjs"
+  },
+  "dependencies": {
+    "@meteora-ag/dynamic-bonding-curve-sdk": "1.5.13",
+    "@solana/spl-token": "0.4.15",
+    "@solana/web3.js": "1.99.0",
+    "bn.js": "5.2.5"
+  },
+  "devDependencies": {
+    "buffer": "6.0.3",
+    "esbuild": "0.28.2"
+  }
+}
